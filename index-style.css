@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.material-symbols-outlined {
+    color: #fff;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+    background-color: rgb(10, 10, 10);
+    min-height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.yeni{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    border-color: rgb(20, 20, 20);
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.seriler-dikey{
+    display: flex;
+    flex-direction: column;
+}
+
+.seriler-yatay{
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    padding: 10px;
+    
+    
+}
+
+.seri{
+    margin: 1%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    border-width: 5px;
+}
+
+#newchaptertitle{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 225%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.navbar a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    position: relative;
+
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+    background: #fff;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
